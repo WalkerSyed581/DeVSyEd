@@ -1,11 +1,9 @@
+//Importing Modulated Style Files
+
 @import "variables";
 @import "reset";
-
-body{
-	background-color : $col;
-	color: $color;
-	font-family: $cinzel;
-}
-a{
-	font-family: $droid;
-}
+@import "rclick";
+@import "base";
+@import "mixins";
+@import "pixgrid";
+@import "modules";

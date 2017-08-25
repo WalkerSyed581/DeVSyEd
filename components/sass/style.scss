@@ -1,0 +1,11 @@
+@import "variables";
+@import "reset";
+
+body{
+	background-color : $col;
+	color: $color;
+	font-family: $cinzel;
+}
+a{
+	font-family: $droid;
+}

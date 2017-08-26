@@ -20,20 +20,33 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+		<div class="container">
 		<header role="banner">
+			<nav class="navbar navbar-default">
 			<h1>DevSyed</h1>
 			<p>portfolio site of Syed Sajeel</p>
-			<nav role="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="aboutme.html">About Me</a></li>
-					<li><a href="hireme.html">Hire Me</a></li>					
-					<li><a href="favmusic.html">Favorite Music</a></li>
-					<li><a href="mypassion.html">My Passion</a></li>
-					<li><a href="otakustuff.html">Anime</a></li>
-					<li><input type="search" placeholder="Search The Site" role="search"><button>Go&#33;</button></li>
-				</ul>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="collapsemenu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="hireme.html">Hire Me</a></li>					
+						<li><a href="favmusic.html">Favorite Music</a></li>
+						<li><a href="mypassion.html">My Passion</a></li>
+						<li><a href="otakustuff.html">Anime</a></li>
+						<li><input type="search" placeholder="Search The Site" role="search"><button class="btn btn-primary">Go&#33;</button></li>
+					</ul>  
+				  </div> 
 			</nav>
+
+			
 		</header>
 		<main role="main">
 			<section>
@@ -65,6 +78,7 @@
 				Social Media Icons go Here
 			</div>
 		</footer>
+		</div>
         <script src="js/main.js"></script>
     </body>
 </html>

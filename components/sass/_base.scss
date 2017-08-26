@@ -12,8 +12,22 @@ body{
 	  font-weight: 900;
 	}
 }
+h1{
+	font-size: 2.2em;
+	text-align: center;
+}
+h2{font-size: 2.0em;}
+h3{font-size: 1.71em;}
+h4{font-size: 1.6em;}
+p{
+	text-indent: 1.5em;
+	margin: 0 0 1em 0;
+}
 a{
 	font-family: $berkshire;
+	&:active{
+		text-decoration: underline;
+	}
 	
 }
 strong{
@@ -23,24 +37,30 @@ strong{
 em{
 	font-style : italic;
 }
-input[type="search"]+button.btn-primary{
+input[type="search"]{
+	outline: 1px solid green;
 }
 header{
-
-}
-.navbar-default{
+    & .navbar-default{
 	display: block;
 	background-color: $darkBlack;
 	background-image: none;
 	border-color: $bluishBlack;
 	padding : 1.5em;
-	& button{
-		display: inline;
-		margin: 0.5em auto 0;
-		border: none;
-	}
-	& .navbar-toggle:focus, & .navbar-toggle:hover {
-		background-color: $darkBlack;
-		border: 0.1em solid  $bluishBlack;
+		& button{
+			display: inline;
+			margin: 0.5em auto 0;
+			border: none;
+		}
+		& .navbar-toggle:focus, & .navbar-toggle:hover {
+			background-color: $darkBlack;
+			border: 0.1em solid  $bluishBlack;
+		}
+		& .navbar-collapse, & .navbar-form{
+			border: none;
+		}
+		& #tagline{
+			text-indent: 0;
+		}
 	}
 }

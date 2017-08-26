@@ -93,8 +93,33 @@ h6 {
   font-weight: 900;
 }
 
+h1 {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.71em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+p {
+  text-indent: 1.5em;
+  margin: 0 0 1em 0;
+}
+
 a {
   font-family: "Berkshire Swash", serif;
+}
+a:active {
+  text-decoration: underline;
 }
 
 strong {
@@ -106,19 +131,29 @@ em {
   font-style: italic;
 }
 
-.navbar-default {
+input[type="search"] {
+  outline: 1px solid green;
+}
+
+header .navbar-default {
   display: block;
   background-color: #000;
   background-image: none;
   border-color: #3E606F;
   padding: 1.5em;
 }
-.navbar-default button {
+header .navbar-default button {
   display: inline;
   margin: 0.5em auto 0;
   border: none;
 }
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+header .navbar-default .navbar-toggle:focus, header .navbar-default .navbar-toggle:hover {
   background-color: #000;
   border: 0.1em solid #3E606F;
+}
+header .navbar-default .navbar-collapse, header .navbar-default .navbar-form {
+  border: none;
+}
+header .navbar-default #tagline {
+  text-indent: 0;
 }

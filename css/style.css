@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel+Decorative:900|Cinzel:400,700");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Caudex:400,400i,700|Cinzel+Decorative:900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +54,7 @@ body {
   margin: 0 auto;
   background-color: #193441;
   color: #D1DBBD;
-  font: 1.4em "Cinzel", serif;
+  font: 1.2em "Caudex", serif;
 }
 
 h1 {
@@ -99,7 +99,7 @@ a {
 
 strong {
   font-style: bold;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 em {

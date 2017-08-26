@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Droid+Serif";
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel+Decorative:900|Cinzel:400,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,4 +47,61 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #193441;
+  color: #D1DBBD;
+  font: 1.4em "Cinzel", serif;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  color: #91AA9D;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Cinzel Decorative", serif;
+  color: #91AA9D;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: "Cinzel Decorative", serif;
+  color: #91AA9D;
+  font-weight: 900;
+}
+
+h4 {
+  font-family: "Cinzel Decorative", serif;
+  color: #91AA9D;
+  font-weight: 900;
+}
+
+h5 {
+  font-family: "Cinzel Decorative", serif;
+  color: #91AA9D;
+  font-weight: 900;
+}
+
+h6 {
+  font-family: "Cinzel Decorative", serif;
+  color: #91AA9D;
+  font-weight: 900;
+}
+
+a {
+  font-family: "Berkshire Swash", serif;
+}
+
+strong {
+  font-style: bold;
+  font-weight: 900;
+}
+
+em {
+  font-style: italic;
 }

@@ -14,6 +14,7 @@ body{
 }
 a{
 	font-family: $berkshire;
+	
 }
 strong{
 	font-style: bold;
@@ -21,4 +22,25 @@ strong{
 }
 em{
 	font-style : italic;
+}
+input[type="search"]+button.btn-primary{
+}
+header{
+
+}
+.navbar-default{
+	display: block;
+	background-color: $darkBlack;
+	background-image: none;
+	border-color: $bluishBlack;
+	padding : 1.5em;
+	& button{
+		display: inline;
+		margin: 0.5em auto 0;
+		border: none;
+	}
+	& .navbar-toggle:focus, & .navbar-toggle:hover {
+		background-color: $darkBlack;
+		border: 0.1em solid  $bluishBlack;
+	}
 }

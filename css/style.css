@@ -105,3 +105,20 @@ strong {
 em {
   font-style: italic;
 }
+
+.navbar-default {
+  display: block;
+  background-color: #000;
+  background-image: none;
+  border-color: #3E606F;
+  padding: 1.5em;
+}
+.navbar-default button {
+  display: inline;
+  margin: 0.5em auto 0;
+  border: none;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #000;
+  border: 0.1em solid #3E606F;
+}

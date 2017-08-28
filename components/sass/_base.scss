@@ -64,3 +64,22 @@ header{
 		}
 	}
 }
+main {
+	& section p.borderBottom{
+		border-bottom: 1px solid $offWhite;
+	}
+	& section div.collapse p{
+		border-bottom: none;
+	}
+	& p button.btn{
+		float: right;
+		background: none;
+		border: none;
+		box-shadow: none;
+		&:focus, &:hover{
+			background: none;
+			border: none;	
+		}
+	}
+	
+}

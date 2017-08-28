@@ -157,3 +157,20 @@ header .navbar-default .navbar-collapse, header .navbar-default .navbar-form {
 header .navbar-default #tagline {
   text-indent: 0;
 }
+
+main section p.borderBottom {
+  border-bottom: 1px solid #FCFFF5;
+}
+main section div.collapse p {
+  border-bottom: none;
+}
+main p button.btn {
+  float: right;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+main p button.btn:focus, main p button.btn:hover {
+  background: none;
+  border: none;
+}

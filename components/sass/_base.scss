@@ -28,7 +28,11 @@ a{
 	&:active{
 		text-decoration: underline;
 	}
-	
+	&:hover,&:focus{
+		background-color: transparentize(#FFA500,0.5);
+		color: orangered;
+	}
+
 }
 strong{
 	font-style: bold;
@@ -37,9 +41,6 @@ strong{
 em{
 	font-style : italic;
 }
-input[type="search"]{
-	outline: 1px solid green;
-}
 header{
     & .navbar-default{
 	display: block;
@@ -47,6 +48,22 @@ header{
 	background-image: none;
 	border-color: $bluishBlack;
 	padding : 1.5em;
+		& .collapse.in{
+			
+			& ul li{
+				display: inline-block;
+				& a{
+					width: 5.1376875em;
+					padding: 1.25em;
+					display : inline-block;
+					transition: all 0.5s ease-in-out;
+				}
+				& a:hover{
+					background-color: transparentize(#FFA500,0.5);
+					color: orangered;
+				}
+			}
+		}
 		& button{
 			display: inline;
 			margin: 0.5em auto 0;

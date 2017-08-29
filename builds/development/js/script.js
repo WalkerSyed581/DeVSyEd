@@ -9,4 +9,10 @@ $(function(){
 			$("main section p#intro").removeClass("borderBottom");
 		}
 	});
+	$('.carousel').carousel({
+		interval: 10000,
+		pause: false,
+		wrap: false
+	});
+
 });

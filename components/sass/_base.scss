@@ -48,8 +48,7 @@ header{
 	background-image: none;
 	border-color: $bluishBlack;
 	padding : 1.5em;
-		& .collapse.in, & .collapse{
-			
+		& .collapse.in,& .collapse,& .collapsing{
 			& ul li{
 				display: inline-block;
 				width: 5.15em;

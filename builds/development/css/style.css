@@ -142,11 +142,11 @@ header .navbar-default {
   border-color: #3E606F;
   padding: 1.5em;
 }
-header .navbar-default .collapse.in ul li, header .navbar-default .collapse ul li {
+header .navbar-default .collapse.in ul li, header .navbar-default .collapse ul li, header .navbar-default .collapsing ul li {
   display: inline-block;
   width: 5.15em;
 }
-header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul li a {
+header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul li a, header .navbar-default .collapsing ul li a {
   width: 4.583333333em;
   padding: 0.52em;
   min-height: 3.5em;
@@ -155,7 +155,7 @@ header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul
   line-height: 1.85em;
   transition: all 0.5s ease-in-out;
 }
-header .navbar-default .collapse.in ul li a:hover, header .navbar-default .collapse ul li a:hover {
+header .navbar-default .collapse.in ul li a:hover, header .navbar-default .collapse ul li a:hover, header .navbar-default .collapsing ul li a:hover {
   background-color: rgba(255, 165, 0, 0.5);
   color: orangered;
 }

@@ -1,9 +1,12 @@
-body{
-	width : 90%;
-	margin : 0 auto;
-	background-color: $black;
-	color : $whitishGreen;
-	font: 1.2em $caudex;
+html{
+ background-image: linear-gradient(to bottom,$offWhite 0%,$bluishBlack 25%,$greyishGreen 50%,$black 75%);
+}
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color : $bluishBlack;
+  color: #D1DBBD;
+  font: 1.2em "Caudex", serif;
 }
 @for $item from 1 through 6{
   h#{$item} {
@@ -100,6 +103,34 @@ main {
 			background: none;
 			border: none;	
 		}
-	}
-	
+	}	
 }
+footer{
+	background-image: linear-gradient(135deg ,$bluishBlack 0%,opacify($greyishGreen, 0.35) 50%,transparentize($darkBlack, 0.80) 75%);
+	min-height: 10em;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin: 1em -0.78125em;
+	border-radius: 1.5em;
+	& div{
+	margin: 0 auto;
+	}
+	& button.btn-default{
+		background-image: linear-gradient(135deg ,$offWhite 0%,$darkBlack 50%);
+		width: 9.5em;
+		min-height: 4.25em;
+		margin : 0 auto;
+	}
+	& button.btn-default a{
+		font-size: 2.2em;
+	}
+	& button.btn-default a:focus{
+		text-decoration: none;
+	}
+}
+.btn-default:focus{
+	background: none;
+	background-image: linear-gradient(135deg ,#FCFFF5 0%,#000 50%);
+}
+

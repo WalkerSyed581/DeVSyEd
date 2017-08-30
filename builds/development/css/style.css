@@ -225,6 +225,13 @@ footer button.btn-default a {
 footer button.btn-default a:focus {
   text-decoration: none;
 }
+footer p {
+  text-indent: 0;
+}
+footer p small {
+  text-align: center;
+  font-size: 0.65em;
+}
 
 .btn-default:focus {
   background: none;

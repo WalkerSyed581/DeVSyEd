@@ -5,8 +5,8 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color : $bluishBlack;
-  color: #D1DBBD;
-  font: 1.2em "Caudex", serif;
+  color: $whitishGreen;
+  font: 1.2em $caudex;
 }
 @for $item from 1 through 6{
   h#{$item} {
@@ -35,12 +35,12 @@ a{
 		text-decoration: underline;
 	}
 	&:hover,&:focus{
-		background-color: rgba(255, 255, 255, 0.34);
-		color: orangered;
+		background-color: $white;
+		color: $orangeRed;
 		text-decoration: underline;
 	}
 	&:visited{
-		color: #ACCFCC;
+		color: $lightBlue;
 	}
 }
 strong{
@@ -71,8 +71,8 @@ header{
 					transition: all 0.5s ease-in-out;
 				}
 				& a:hover{
-					background-color: rgba(255, 255, 255, 0.34);
-					color: orangered;
+					background-color: $white;
+					color: $orangeRed;
 				}
 			}
 		}
@@ -134,9 +134,16 @@ footer{
 	& button.btn-default a:focus{
 		text-decoration: none;
 	}
+	& p{
+		text-indent : 0;
+		& small{
+			text-align: center;
+			font-size: 0.65em;
+		}
+	}
 }
 .btn-default:focus{
 	background: none;
-	background-image: linear-gradient(135deg ,#FCFFF5 0%,#000 50%);
+	background-image: linear-gradient(135deg ,$offWhite 0%,$darkBlack 50%);
 }
 

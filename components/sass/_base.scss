@@ -19,7 +19,10 @@ h1{
 	font-size: 2.2em;
 	text-align: center;
 }
-h2{font-size: 2.0em;}
+h2{
+	font-size: 2.0em;
+	color : $darkBlue;
+}
 h3{
 	font-size: 1.6em;
 	color: $skyBlue;
@@ -90,6 +93,7 @@ header{
 		}
 		& #tagline{
 			text-indent: 0;
+			text-align: center;
 		}
 	}
 }
@@ -126,7 +130,7 @@ footer{
 		background-image: linear-gradient(135deg ,$offWhite 0%,$darkBlack 50%);
 		width: 9.5em;
 		min-height: 4.25em;
-		margin : 0 auto;
+		margin: 0 auto 0.5em;
 	}
 	& button.btn-default a{
 		font-size: 2.2em;
@@ -135,6 +139,7 @@ footer{
 		text-decoration: none;
 	}
 	& p{
+		margin: 0 auto;
 		text-indent : 0;
 		& small{
 			text-align: center;
@@ -146,4 +151,3 @@ footer{
 	background: none;
 	background-image: linear-gradient(135deg ,$offWhite 0%,$darkBlack 50%);
 }
-

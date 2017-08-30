@@ -20,7 +20,10 @@ h1{
 	text-align: center;
 }
 h2{font-size: 2.0em;}
-h3{font-size: 1.6em;}
+h3{
+	font-size: 1.6em;
+	color: $skyBlue;
+}
 h4{font-size: 1.4em;}
 p{
 	text-indent: 1.5em;
@@ -32,10 +35,13 @@ a{
 		text-decoration: underline;
 	}
 	&:hover,&:focus{
-		background-color: transparentize(#FFA500,0.5);
+		background-color: rgba(255, 255, 255, 0.34);
 		color: orangered;
+		text-decoration: underline;
 	}
-
+	&:visited{
+		color: #ACCFCC;
+	}
 }
 strong{
 	font-style: bold;
@@ -65,7 +71,7 @@ header{
 					transition: all 0.5s ease-in-out;
 				}
 				& a:hover{
-					background-color: transparentize(#FFA500,0.5);
+					background-color: rgba(255, 255, 255, 0.34);
 					color: orangered;
 				}
 			}

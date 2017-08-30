@@ -108,6 +108,7 @@ h2 {
 
 h3 {
   font-size: 1.6em;
+  color: #ACF0F2;
 }
 
 h4 {
@@ -126,8 +127,12 @@ a:active {
   text-decoration: underline;
 }
 a:hover, a:focus {
-  background-color: rgba(255, 165, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.34);
   color: orangered;
+  text-decoration: underline;
+}
+a:visited {
+  color: #ACCFCC;
 }
 
 strong {
@@ -160,7 +165,7 @@ header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul
   transition: all 0.5s ease-in-out;
 }
 header .navbar-default .collapse.in ul li a:hover, header .navbar-default .collapse ul li a:hover, header .navbar-default .collapsing ul li a:hover {
-  background-color: rgba(255, 165, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.34);
   color: orangered;
 }
 header .navbar-default button {

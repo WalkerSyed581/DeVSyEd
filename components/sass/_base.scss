@@ -1,5 +1,5 @@
 html{
- background-image: linear-gradient(to bottom,$offWhite 0%,$lightBlue 15%,$offWhite  50%,$black 60%);
+ background-image: linear-gradient(to bottom,$offWhite 0%,$lightBlue 15%,$offWhite 50%,$black 75%);
 }
 body {
   width: 80%;
@@ -24,10 +24,13 @@ h2{
 	color : $darkBlue;
 }
 h3{
-	font-size: 1.6em;
+	font-size: 1.8em;
 	color: $skyBlue;
 }
-h4{font-size: 1.4em;}
+h4{
+	font-size: 1.4em;
+	color : $offWhite;
+}
 p{
 	text-indent: 1.5em;
 	margin: 0 0 1em 0;
@@ -125,7 +128,7 @@ footer{
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	margin: 1em -0.78125em;
+	margin: 0.5em -0.7em;
 	border-radius: 1.5em;
 	& div{
 	margin: 0 auto;

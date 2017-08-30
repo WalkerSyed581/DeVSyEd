@@ -50,7 +50,7 @@ table {
 }
 
 html {
-  background-image: linear-gradient(to bottom, #FCFFF5 0%, #AACFFF 15%, #FCFFF5 50%, #193441 60%);
+  background-image: linear-gradient(to bottom, #FCFFF5 0%, #AACFFF 15%, #FCFFF5 50%, #193441 75%);
 }
 
 body {
@@ -108,12 +108,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   color: #ACF0F2;
 }
 
 h4 {
   font-size: 1.4em;
+  color: #FCFFF5;
 }
 
 p {
@@ -214,7 +215,7 @@ footer {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin: 1em -0.78125em;
+  margin: 0.5em -0.7em;
   border-radius: 1.5em;
 }
 footer div {
@@ -251,4 +252,8 @@ div.carousel {
   text-align: center;
   min-height: 9em;
   border-radius: 0 0 1em 1em/0 0 0.5em 0.5em;
+}
+
+.twitter-timeline.twitter-timeline-rendered {
+  margin: 0 auto;
 }

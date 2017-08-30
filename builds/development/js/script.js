@@ -14,5 +14,4 @@ $(function(){
 		pause: false,
 		wrap: false
 	});
-
 });

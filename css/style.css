@@ -50,7 +50,7 @@ table {
 }
 
 html {
-  background-image: linear-gradient(to bottom, #FCFFF5 0%, #3E606F 25%, #91AA9D 50%, #193441 75%);
+  background-image: linear-gradient(to bottom, #FCFFF5 0%, #AACFFF 15%, #FCFFF5 50%, #193441 60%);
 }
 
 body {
@@ -203,6 +203,11 @@ main p button.btn:focus, main p button.btn:hover {
   border: none;
 }
 
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  color: white;
+}
+
 footer {
   background-image: linear-gradient(135deg, #3E606F 0%, #91aa9d 50%, rgba(0, 0, 0, 0.2) 75%);
   min-height: 10em;
@@ -245,5 +250,5 @@ div.carousel {
   background-color: #000;
   text-align: center;
   min-height: 9em;
-  border-radius: 1em/0.5em;
+  border-radius: 0 0 1em 1em/0 0 0.5em 0.5em;
 }

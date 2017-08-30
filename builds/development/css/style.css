@@ -144,11 +144,15 @@ header .navbar-default {
 }
 header .navbar-default .collapse.in ul li, header .navbar-default .collapse ul li {
   display: inline-block;
+  width: 5.15em;
 }
 header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul li a {
-  width: 5.1376875em;
-  padding: 1.25em;
+  width: 4.583333333em;
+  padding: 0.52em;
+  min-height: 3.5em;
   display: inline-block;
+  text-align: center;
+  line-height: 1.85em;
   transition: all 0.5s ease-in-out;
 }
 header .navbar-default .collapse.in ul li a:hover, header .navbar-default .collapse ul li a:hover {

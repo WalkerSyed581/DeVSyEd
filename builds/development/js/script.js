@@ -14,4 +14,7 @@ $(function(){
 		pause: false,
 		wrap: false
 	});
+	$('.navbar li.disabled a').on("click",function(e){
+		e.preventDefault();
+	});
 });

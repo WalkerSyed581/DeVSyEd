@@ -122,6 +122,18 @@ p {
   margin: 0 0 1em 0;
 }
 
+.navbar li.disabled a {
+  color: #777777;
+}
+
+.navbar li.disabled a:hover,
+.navbar li.disabled a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
 a {
   font-family: "Berkshire Swash", serif;
 }
@@ -146,6 +158,9 @@ em {
   font-style: italic;
 }
 
+header {
+  box-shadow: 0.01em 0.01em 0.1em 0.1em #FCFFF5;
+}
 header .navbar-default {
   display: block;
   background-color: #000;
@@ -169,6 +184,11 @@ header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul
 header .navbar-default .collapse.in ul li a:hover, header .navbar-default .collapse ul li a:hover, header .navbar-default .collapsing ul li a:hover {
   background-color: rgba(255, 255, 255, 0.34);
   color: orangered;
+}
+header .navbar-default .collapse.in ul li.disabled a:hover, header .navbar-default .collapse.in ul li.disabled a:hover, header .navbar-default .collapse ul li.disabled a:hover, header .navbar-default .collapse ul li.disabled a:hover, header .navbar-default .collapsing ul li.disabled a:hover, header .navbar-default .collapsing ul li.disabled a:hover {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
 }
 header .navbar-default button {
   display: inline;
@@ -242,7 +262,7 @@ footer p small {
   font-size: 0.65em;
 }
 
-.btn-default:focus {
+.btn-default:focus, .btn-default:hover {
   background: none;
   background-image: linear-gradient(135deg, #FCFFF5 0%, #000 50%);
 }
@@ -252,6 +272,9 @@ div.carousel {
   text-align: center;
   min-height: 9em;
   border-radius: 0 0 1em 1em/0 0 0.5em 0.5em;
+}
+div.carousel h3 {
+  text-shadow: 0.01em 0.01em 0.2em #D1DBBD;
 }
 
 .twitter-timeline.twitter-timeline-rendered {

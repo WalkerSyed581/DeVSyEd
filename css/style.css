@@ -137,16 +137,28 @@ p {
 a {
   font-family: "Berkshire Swash", serif;
 }
-a:active {
-  text-decoration: underline;
-}
-a:hover, a:focus {
-  background-color: rgba(255, 255, 255, 0.34);
-  color: orangered;
-  text-decoration: underline;
-}
 a:visited {
   color: #AACFFF;
+}
+a:focus, a:hover {
+  background-color: rgba(255, 255, 255, 0.34);
+  color: #ACF0F2;
+  text-decoration: underline;
+}
+a:active {
+  color: #2B86C2;
+  text-decoration: underline;
+}
+
+.btn {
+  float: right;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.btn:focus, .btn:hover {
+  background: none;
+  border: none;
 }
 
 strong {
@@ -183,7 +195,7 @@ header .navbar-default .collapse.in ul li a, header .navbar-default .collapse ul
 }
 header .navbar-default .collapse.in ul li a:hover, header .navbar-default .collapse ul li a:hover, header .navbar-default .collapsing ul li a:hover {
   background-color: rgba(255, 255, 255, 0.34);
-  color: orangered;
+  color: #2B86C2;
 }
 header .navbar-default .collapse.in ul li.disabled a:hover, header .navbar-default .collapse.in ul li.disabled a:hover, header .navbar-default .collapse ul li.disabled a:hover, header .navbar-default .collapse ul li.disabled a:hover, header .navbar-default .collapsing ul li.disabled a:hover, header .navbar-default .collapsing ul li.disabled a:hover {
   color: #777777;
@@ -279,4 +291,14 @@ div.carousel h3 {
 
 .twitter-timeline.twitter-timeline-rendered {
   margin: 0 auto;
+}
+
+ol.list-group {
+  box-shadow: 0.1em 0.15em 0.1em 0.05em #91AA9D, -0.1em -0.15em 0.1em 0.05em #91AA9D;
+}
+ol.list-group li {
+  background: linear-gradient(175deg, #FCFFF5 0%, #000 50%);
+  font: 0.8em "Cinzel Decorative", serif;
+  color: lightcyan;
+  border: 1px solid #5a5a5a;
 }

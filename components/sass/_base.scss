@@ -47,18 +47,29 @@ p{
 }
 a{
 	font-family: $berkshire;
-	&:active{
-		text-decoration: underline;
-	}
-	&:hover,&:focus{
-		background-color: $white;
-		color: $orangeRed;
-		text-decoration: underline;
-	}
 	&:visited{
 		color: $lightBlue;
 	}
+	&:focus,&:hover{
+		background-color: $white;
+		color: $skyBlue;
+		text-decoration: underline;
+	}
+	&:active{
+		color: $darkBlue;
+		text-decoration: underline;
+	}
 }
+.btn{
+		float: right;
+		background: none;
+		border: none;
+		box-shadow: none;
+		&:focus, &:hover{
+			background: none;
+			border: none;	
+	}
+}	
 strong{
 	font-style: bold;
 	font-weight: 700;
@@ -89,7 +100,7 @@ header{
 				}
 				& a:hover{
 					background-color: $white;
-					color: $orangeRed;
+					color: $darkBlue;
 				}
 			}
 			& ul li.disabled a:hover,

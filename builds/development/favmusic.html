@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
         <meta name="description" content="This is a portfolio website of Syed Sajeel Hassan for the sake of starting a career as a web developer. It includes information about skills that i possess as a web developer as well as certain aspects of my personality. The aim of this site is to get me hired and to be referenced as a showcase of my skills">
 		<meta name="keywords" content="DevSyed, Syed Sajeel Hassan, Portfolio Website, Personality, Web Development, Hiring, Music, Anime, Skills, Passion, Otaku, Jukebox, Liked Tweets Feed, Metalhead">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,14 +20,13 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		<div class="container">
+		<div class="container-fluid">
 		<header role="banner">
 			<nav class="navbar navbar-default">
 			<div class="page-header">
 				<h1>DevSyed</h1>
 				<p id="tagline">portfolio site of Syed Sajeel</p>
-			</div>
-				<div class="navbar-header">
+				<div class="navbar-header visible-xs">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -36,15 +34,16 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
+			</div>
 				<div class="collapse navbar-collapse" id="collapsemenu">
 					<ul>
-						<li><a href="index.html" title="Homepage">Home</a></li>
+						<li><a href="index.html" title="Homepage" class="active">Home</a></li>
 						<li><a href="aboutme.html" title="Biography">Bio</a></li>
 						<li><a href="hireme.html" title="Hire Me as a Web Developer">Hire Me</a></li>					
 						<li class="disabled"><a href="favmusic.html" title="Music I love">Favorite Music</a></li>
 						<li><a href="mypassion.html" title="Web Development as a passion">My Passion</a></li>
 						<li><a href="otakustuff.html" title="Liking of Anime">Anime lover</a></li>
-					</ul>
+					</ul>  
 				  </div> 
 			</nav>
 
@@ -68,14 +67,16 @@
 				
 				<p>I started listening to music when I was young but then I stopped for a few years but I resumed in <time datetime="2015-12">December of 2015</time>.</p>
 					
-					<h4>Linkin Park</h4>
-					<p>Ever since then I have been a big fan of <a href="https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q" title="Listen to Linkin Park's Music">Linkin Park</a> &#40;American Rock/Metal Band&#41;. They are my all time favorites but unfortunately the suicide of the lead vocalist <a href="https://en.wikipedia.org/wiki/Chester_Bennington" title="Read about Chester">Chester Bennington</a> on <time datetime="2017-07-20">20th July 2017</time> has left me in a sad and devastated situation.</p>
+				<section id="asideSection">	
+					<h5>Linkin Park</h5>
+					<p>Ever since I started listening to music I have been a big fan of <a href="https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q" title="Listen to Linkin Park's Music">Linkin Park</a> &#40;American Rock/Metal Band&#41;. They are my all time favorites. There music is so diverse ranging from screamy and metal sounding songs to very mellow and calming songs as well. But unfortunately the suicide of the lead vocalist <a href="https://en.wikipedia.org/wiki/Chester_Bennington" title="Read about Chester">Chester Bennington</a> on <time datetime="2017-07-20">20th July 2017</time> has left me in a sad and devastated situation. Linkin Park&#39;s music has helped millions of people through their hardships.</p>
+				</section>
 			</section>
 			<section id="metalLyrics">
-				<h3>Metal and Lyrics</h3>
+				<h4>Metal and Lyrics</h4>
 				<p>Not to get all technical about music because i don&#39;t have that much knowledge about it but I want to shed light on what kind of songs I tend to like. I love songs belonging to Metal genre but that is not the only genre I like. I like EDM quite a bit. As far as modern Pop songs are concerned well… I only like those Modern Pop songs which are lyrically good otherwise I run away fast. I also like songs and bands that have astronomical jargon in their lyrics and that spacy feeling in the music like Starset.</p>
 					<h4>Favorite Bands</h4>
-					<dl>
+					<dl  id="linkContainer">
 						<dt><a href="https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q" title="Listen to Linkin Park's Music">Linkin Park</a></dt> 
 							<dd>Genre&#58; Alt Rock, Nu Metal, Alt Metal</dd>
 						<dt><a href="https://www.youtube.com/channel/UCk20cSRhH_ms_Yk1AZItFqA" title="Listen to Starset's Music">Starset</a></dt>
@@ -91,10 +92,10 @@
 					</dl>
 			</section>
 			<section id="jukebox">
-				<h3>Favorite Songs Jukebox</h3>
+				<h4>Jukebox</h4>
 				<p>Favorite to Least Favorite&#44; but I am sure you will enjoy these songs as well because they are pretty rich lyrically&#58;</p>
-				<ol class="list-group">
-					<li class="list-group-item" data-song="finalMasquerade">Final Masquerade &#45; Linkin Park<button class="btn btn-primary" type="button">
+				<ul class="list-group">
+					<li class="list-group-item" data-song="finalMasquerade">Final Masquerade &#45; <abbr title="Linkin Park" class="initialism">LP</abbr><button class="btn btn-primary" type="button">
 					<span class="glyphicon glyphicon-menu-down"></span>
 					<span class="sr-only">Read More</span>
 						</button></li>
@@ -114,7 +115,7 @@
 					<span class="glyphicon glyphicon-menu-down"></span>
 					<span class="sr-only">Read More</span>
 						</button></li>
-				</ol>
+				</ul>
 			</section>
 			
 		</main>

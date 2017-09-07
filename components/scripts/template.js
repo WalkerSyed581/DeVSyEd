@@ -47,6 +47,6 @@ $(function(){
 			$(this).next('iframe').remove();
 			$(this).find('span.glyphicon.glyphicon-remove').removeClass("glyphicon-remove").addClass("glyphicon-menu-down");
 			}
-		});
+		});	 
 	});
 });

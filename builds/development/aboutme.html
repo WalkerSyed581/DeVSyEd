@@ -20,14 +20,13 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		<div class="container">
+		<div class="container-fluid">
 		<header role="banner">
 			<nav class="navbar navbar-default">
 			<div class="page-header">
 				<h1>DevSyed</h1>
 				<p id="tagline">portfolio site of Syed Sajeel</p>
-			</div>
-				<div class="navbar-header">
+				<div class="navbar-header visible-xs">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -35,15 +34,16 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
+			</div>
 				<div class="collapse navbar-collapse" id="collapsemenu">
 					<ul>
-						<li><a href="index.html" title="Homepage">Home</a></li>
+						<li><a href="index.html" title="Homepage" class="active">Home</a></li>
 						<li class="disabled"><a href="aboutme.html" title="Biography">Bio</a></li>
 						<li><a href="hireme.html" title="Hire Me as a Web Developer">Hire Me</a></li>					
 						<li><a href="favmusic.html" title="Music I love">Favorite Music</a></li>
 						<li><a href="mypassion.html" title="Web Development as a passion">My Passion</a></li>
 						<li><a href="otakustuff.html" title="Liking of Anime">Anime lover</a></li>
-					</ul>
+					</ul>  
 				  </div> 
 			</nav>
 
@@ -65,13 +65,20 @@
 				<section id="bioOverview">
 					<h3>Bio Overview</h3>
 					<p>Okay just to be clear I am not gonna talk about how I came to be &#40;If that is what you thought&#41;. I&#44; Syed Sajeel Hassan&#44; am an 18 year old boy living in the Northern Province of Pakistan and in a city called D.I.Khan &#40;The full name is a mouthful&#41;. I am an introvert which has been an advantage to some extent.</p>
-						<h4>Academics</h4>
-						<p> I just finished my 2<sup>nd</sup> year of college. I am what you may call an accomplished child as far as academics are concerned because I have had straight A&#43;&#39;s my entire academic career. I also achieved 7<sup>th</sup> Position in the city in 2<sup>nd</sup> Year of College</p>
-						
-						<h4>Web Development</h4>
-						<p>I LOVE web development, and it&#39;s my passion. Weird right, a guy who has gone through all the torture of Physics&#44; Chemistry and Calculus and did well in all of them has suddenly stumbled upon and loves nothing other but web development. I like Metal music and i also like Japanese animated series called <strong>Anime</strong>. And last but not the least I do not like the place and province I live in. I guess you&#39;d be the same if in my place.</p>
-					<figure>
-						<img src="images/Sajeel.jpg" width="270px" height="480px">
+						<section id="academics">
+							<h4>Academics</h4>
+							<p> I just finished my 2<sup>nd</sup> year of college. I am what you may call an accomplished child as far as academics are concerned because I have had straight A&#43;&#39;s my entire academic career. I also achieved 7<sup>th</sup> Position in the city in 2<sup>nd</sup> Year of College</p>
+							<figure class="media">
+									<img src="images/ceremony.jpg" width="480" height="270px" title="Receiving an Award" class="media-object">
+									<figcaption></figcaption>
+							</figure>
+						</section>
+						<section>
+							<h4>Web Development</h4>
+							<p>I LOVE web development, and it&#39;s my passion. Weird right, a guy who has gone through all the torture of Physics&#44; Chemistry and Calculus and did well in all of them has suddenly stumbled upon and loves nothing other but web development. I like Metal music and i also like Japanese animated series called <strong>Anime</strong>. And last but not the least I do not like the place and province I live in. I guess you&#39;d be the same if in my place.</p>
+						</section>
+					<figure class="media">
+						<img src="images/Sajeel.jpg" width="270px" height="480px" class="media-object">
 						<figcaption>Your's Truly</figcaption>
 					</figure>
 				</section>
@@ -87,7 +94,9 @@
 		  </article>  
 		  <article id="likedTweets">
 			  <h3>Liked Tweets</h3>
-			  <a class="twitter-timeline" data-lang="en" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/Sajeelhassan/likes">Tweets Liked by @Sajeelhassan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			  <div id="twitter-widget">
+				  <a class='twitter-timeline' data-lang='en' data-width='600' data-height='450' data-theme='dark' href='https://twitter.com/Sajeelhassan/likes'>Tweets Liked by @Sajeelhassan</a> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
+			  </div>
 		  </article>
 	</main>
 		<footer role="contentinfo">
@@ -99,7 +108,7 @@
 		</footer>
 			</div>
 				<script type="text/javascript" src="js/script.js"></script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3bd186c545881"></script> 
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3bd186c545881"></script> 
+				<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3bd186c545881"></script> 
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3bd186c545881"></script> -->
     </body>
 </html>

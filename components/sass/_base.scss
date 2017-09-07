@@ -1,12 +1,13 @@
 html{
- background-image: linear-gradient(to bottom,$offWhite 0%,$lightBlue 15%,$offWhite 50%,$black 75%);
+ background-image: linear-gradient(to bottom,$offWhite 0%,$lightBlue 15%,$offWhite 60%,$black 95%);
+ font-size: 1.2em;
 }
 body {
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
-  background-color : $bluishBlack;
-  color: $whitishGreen;
-  font: 1.2em $caudex;
+  background-image: linear-gradient(to bottom,$darkGreen 15%,$blue 50%,$brownish 70%,$lightGreen 90%);
+  color: lavender;
+  font: 1em $openSans;
 }
 @for $item from 1 through 6{
   h#{$item} {
@@ -35,6 +36,17 @@ p{
 	text-indent: 1.5em;
 	margin: 0 0 1em 0;
 }
+figure{
+	& figcaption{
+	margin: 0 auto;
+	}
+	& img{
+	margin: 0 auto;
+	}
+}
+img{
+	max-width: 100%;
+}
 .navbar li.disabled a {
   color: #777777;
 }
@@ -47,6 +59,7 @@ p{
 }
 a{
 	font-family: $berkshire;
+	font-weight: normal;
 	&:visited{
 		color: $lightBlue;
 	}
@@ -77,6 +90,47 @@ strong{
 em{
 	font-style : italic;
 }
+dl {
+	margin: 2em 0;
+	padding: 0;
+	width: 100%;
+}
+dt {
+	color: #FFFFFF;
+	padding: 0;
+	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.6em;
+	line-height: 45px;
+	text-align: center;
+	background-image: linear-gradient(135deg,$skyBlue 15%, $lightGreen 90%);
+	& a:visited{
+		color: brown;
+	}
+	& a:focus{
+		color: darkturquoise;
+	}
+}
+dd {
+	margin: 0 0 1em 0;
+	background-image: linear-gradient(45deg,$darkGreen, $darkBlue);
+	text-align: center;
+	padding: 1em .5em;
+	font-style: italic;
+}
+dl#linkContainer{
+	& dt{
+	background-image: linear-gradient(135deg,$darkGreen 4%,transparentize($skyBlue, 0.3) 20%,$lightBlue 50%,transparentize($skyBlue, 0.3) 75%,$darkGreen 96%);
+	}
+	& dd{
+	background-image: linear-gradient(45deg,$darkGreen, $darkBlue);
+	}
+}
+abbr{
+	border-bottom: none;
+}
+ul{
+	text-align: center;
+}
 header{
 	box-shadow: 0.01em 0.01em 0.1em 0.1em $offWhite;
     & .navbar-default{
@@ -84,26 +138,64 @@ header{
 	background-color: $darkBlack;
 	background-image: none;
 	border-color: $bluishBlack;
-	padding : 1.5em;
+	padding : 0.75em;
+		& .page-header{
+			position: relative;
+			width : 97%;
+			margin: 0;
+			& .navbar-header button{
+				margin-top: 0;
+				float: right;
+			}
+		}
 		& .collapse.in,& .collapse,& .collapsing{
+			padding: 0;
+			margin: 0;
+			width : 97%;
+			@media screen and (min-width: 48em){
+				& {
+					background-image: linear-gradient(135deg,$darkBlack 10%,darken($blue,10%) 20%,$darkBlack 50%,darken($blue,10%) 80%,$darkBlack 90%);
+					}
+				& li a:focus{
+						background-color: $darkBlack;
+					}
+				& li.disabled a:focus,
+				& li.disabled a:hover{
+				  background-color: transparent;
+				}
+			}
 			& ul li{
 				display: inline-block;
-				width: 5.15em;
+				width: 40%;
+				min-height: 3.073em;
+				@media screen and (min-width: 48em){
+					& {
+						display: inline-block;
+						width: 15.46%;
+					}
+				}
 				& a{
-					width: 4.583333333em;
-					padding: 0.52em;
-					min-height: 3.5em;
+					width: 96.37%;
+					vertical-align: middle;
+					padding: 10%;
+					min-height: 58.88px;
 					display : inline-block;
+					font-size: 100%;
 					text-align: center;
-					line-height: 1.85em;
+					line-height: 1.5;
 					transition: all 0.5s ease-in-out;
+				}
+				@media screen and (max-width: 22.81em){
+					& a{
+						font-size: 75%;
+					}
 				}
 				& a:hover{
 					background-color: $white;
 					color: $darkBlue;
 				}
 			}
-			& ul li.disabled a:hover,
+			& ul li.disabled a:focus,
 			& ul li.disabled a:hover{
 				  color: #777777;
 				  text-decoration: none;
@@ -129,6 +221,7 @@ header{
 	}
 }
 main {
+	position: relative;
 	& section p.borderBottom{
 		border-bottom: 1px solid $offWhite;
 	}
@@ -136,6 +229,7 @@ main {
 		border-bottom: none;
 	}
 	& p button.btn{
+		position: absolute;
 		float: right;
 		background: none;
 		border: none;
@@ -151,13 +245,13 @@ main {
 	color: opacify($white, 1.0);
 }
 footer{
-	background-image: linear-gradient(135deg ,$bluishBlack 0%,opacify($greyishGreen, 0.35) 50%,transparentize($darkBlack, 0.80) 75%);
+	background-image: linear-gradient(135deg,$darkGreen 40%,$offWhite 80%);
 	min-height: 10em;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	margin: 0.5em -0.7em;
-	border-radius: 1.5em;
+	margin: 0.5em -0.7em 0;
+	border-radius: 1.5em 1.5em 0 0;
 	& div{
 	margin: 0 auto;
 	}
@@ -185,4 +279,11 @@ footer{
 .btn-default:focus, .btn-default:hover{
 	background: none;
 	background-image: linear-gradient(135deg ,$offWhite 0%,$darkBlack 50%);
+}
+section#asideSection{
+	padding: 1.5em;
+	background: url('../images/stripes.jpg') 50%/cover no-repeat border-box;
+	border-radius: 0.5em;
+	color: $skyBlue;
+	font-weight: 700;
 }

@@ -1,0 +1,28 @@
+ol{
+	text-align: center;
+    counter-reset: item;
+	& li{
+		background-image: linear-gradient(45deg,darken($lightGreen, 20%) 40%,$darkBlue 60%,$bluishBlack 80%);
+		display : block;
+		margin-left: 2em;
+		position: relative;
+		margin-top : 0.5em;
+		border: 1px solid $darkBlack;
+		height: 6.5em;
+}
+    & li:before{
+	 display: inline-block;
+	 position: absolute;
+	 content: counter(item);
+	 counter-increment: item;
+	 width: auto;
+	 left: -0.1em;
+	 margin: -0.04em 2em 0 -0.9em;
+	 background-image: linear-gradient(135deg,$darkBlack 25%,$offWhite 75%);
+	 height: inherit;
+	 width: 1em;
+	 font: 2em $cinzelDecor;
+	 border: 1px solid $darkBlack;
+	 padding-top: 0.75em;
+}
+}

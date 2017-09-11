@@ -224,6 +224,9 @@ main {
 	position: relative;
 	& section p.borderBottom{
 		border-bottom: 1px solid $offWhite;
+		@media screen and (min-width : 48em){
+			border: none;
+		}
 	}
 	& section div.collapse p{
 		border-bottom: none;
@@ -238,14 +241,27 @@ main {
 			background: none;
 			border: none;	
 		}
-	}	
+	}
+	@media screen and (min-width : 62em){
+		& section.leftDesktopElements{
+			float: left;
+			width: 62%;
+		}
+		& section.rightDesktopElements{
+			float: right;
+			width: 35%;
+		}
+	}
 }
 .carousel-control.left, .carousel-control.right{
 	background-image: none;
+	height: 8em;
+	margin-top: 0.5em;
 	color: opacify($white, 1.0);
 }
 footer{
-	background-image: linear-gradient(135deg,$darkGreen 40%,$offWhite 80%);
+	background-image: linear-gradient(90deg,$darkGreen 45%,$footerNavBlue 70%,#000 90%);
+	box-shadow: 0.01em 0.01em 0.1em 0.1em $darkBlue;
 	min-height: 10em;
 	display: flex;
 	flex-flow: column;
@@ -275,10 +291,66 @@ footer{
 			font-size: 0.65em;
 		}
 	}
+	& > div{
+		margin: 0 auto;
+		width: 50%;
+		text-align: center;
+		display: flex;
+		flex-flow: column;
+		order: 1;
+	}
+	& div button.btn-default{
+		order: 1;
+	}
+	& div div.socialMedia{
+		order: 2;
+	} 
+	& div p{
+		order: 3;
+	}
+	@media screen and (min-width : 62em){
+			&{
+				flex-flow: row;
+			}
+			& ul{
+				order: 2;
+				padding: 1em 1.5em 2.2em;
+				align-self: flex-start;
+				width: 45%;
+				border-radius: 0 0 1em 1em;
+				height: inherit;
+			}
+			& ul li{
+				display: inline-block;
+				width: 25%;
+				padding: 1%;
+				margin: 2.5%;
+			}
+			& ul li a{
+				font-family: "Open Sans Condensed", sans-serif;
+			}
+			& div button.btn-default{
+				margin: 1.5em;
+				width: 80%;
+				display: inline-block;
+				order: 1;
+				align-self: center;
+			}
+			& div div.socialMedia{
+				order: 2;
+			} 
+			& div p{
+				margin: 0 auto;
+				order: 3;
+ 			}
+		}
 }
 .btn-default:focus, .btn-default:hover{
 	background: none;
 	background-image: linear-gradient(135deg ,$offWhite 0%,$darkBlack 50%);
+}
+.img-thumbnail{
+	background: none;
 }
 section#asideSection{
 	padding: 1.5em;

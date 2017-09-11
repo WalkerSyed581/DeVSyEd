@@ -323,6 +323,11 @@ main {
 main section p.borderBottom {
   border-bottom: 1px solid #FCFFF5;
 }
+@media screen and (min-width: 48em) {
+  main section p.borderBottom {
+    border: none;
+  }
+}
 main section div.collapse p {
   border-bottom: none;
 }
@@ -337,14 +342,27 @@ main p button.btn:focus, main p button.btn:hover {
   background: none;
   border: none;
 }
+@media screen and (min-width: 62em) {
+  main section.leftDesktopElements {
+    float: left;
+    width: 62%;
+  }
+  main section.rightDesktopElements {
+    float: right;
+    width: 35%;
+  }
+}
 
 .carousel-control.left, .carousel-control.right {
   background-image: none;
+  height: 8em;
+  margin-top: 0.5em;
   color: white;
 }
 
 footer {
-  background-image: linear-gradient(135deg, rgba(0, 51, 34, 0.9) 40%, #FCFFF5 80%);
+  background-image: linear-gradient(90deg, rgba(0, 51, 34, 0.9) 45%, #004050 70%, #000 90%);
+  box-shadow: 0.01em 0.01em 0.1em 0.1em #2B86C2;
   min-height: 10em;
   display: flex;
   flex-flow: column;
@@ -375,10 +393,67 @@ footer p small {
   text-align: center;
   font-size: 0.65em;
 }
+footer > div {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  order: 1;
+}
+footer div button.btn-default {
+  order: 1;
+}
+footer div div.socialMedia {
+  order: 2;
+}
+footer div p {
+  order: 3;
+}
+@media screen and (min-width: 62em) {
+  footer {
+    flex-flow: row;
+  }
+  footer ul {
+    order: 2;
+    padding: 1em 1.5em 2.2em;
+    align-self: flex-start;
+    width: 45%;
+    border-radius: 0 0 1em 1em;
+    height: inherit;
+  }
+  footer ul li {
+    display: inline-block;
+    width: 25%;
+    padding: 1%;
+    margin: 2.5%;
+  }
+  footer ul li a {
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+  footer div button.btn-default {
+    margin: 1.5em;
+    width: 80%;
+    display: inline-block;
+    order: 1;
+    align-self: center;
+  }
+  footer div div.socialMedia {
+    order: 2;
+  }
+  footer div p {
+    margin: 0 auto;
+    order: 3;
+  }
+}
 
 .btn-default:focus, .btn-default:hover {
   background: none;
   background-image: linear-gradient(135deg, #FCFFF5 0%, #000 50%);
+}
+
+.img-thumbnail {
+  background: none;
 }
 
 section#asideSection {
@@ -389,22 +464,58 @@ section#asideSection {
   font-weight: 700;
 }
 
-div.carousel {
+section.specialSection {
   background-color: #000;
   text-align: center;
   min-height: 10em;
+  margin-top: 0.75em;
   border-radius: 0 0 1em 1em/0 0 0.5em 0.5em;
 }
-div.carousel h3 {
+@media screen and (min-width: 62em) {
+  section.specialSection {
+    border-width: 0.5em;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, transparent, #4dff4d, transparent) 1 100%;
+    border-radius: 1em 1em 1em 1em/1em 1em 0.5em 0.5em;
+    text-align: left;
+    padding: 0.5em;
+  }
+  section.specialSection ul {
+    text-align: left;
+  }
+  section.specialSection p {
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+}
+section.specialSection h3 {
   text-shadow: 0.01em 0.01em 0.2em #D1DBBD;
 }
 
+@media screen and (min-width: 62em) {
+  .carousel div.col-md-8 section.col-md-5 {
+    margin-left: -1%;
+    font-size: 80%;
+  }
+  .carousel div.col-md-8 section.col-md-5:last-of-type {
+    margin-left: 5%;
+  }
+}
+
+.carousel section.hidden-sm.hidden-xs {
+  margin-top: 1em;
+  padding: 1em;
+  background-origin: padding-box;
+  background-image: linear-gradient(135deg, transparent 0, rgba(0, 51, 34, 0.9) 30%, #000 50%, rgba(0, 51, 34, 0.9) 80%, transparent 90%);
+}
+
 section#academics {
-  background-image: repeating-linear-gradient(135deg, #000, #2B86C2 4em, #000 2em);
+  background-image: repeating-linear-gradient(135deg, #000, #184c6f 1em, #000 4em);
   padding: 0.75em;
+  border-radius: 1em;
+  box-shadow: 0.15em 0.15em 0.15em 0.15em #000;
 }
 section#academics + section {
-  margin-top: 0.25em;
+  margin-top: 0.75em;
 }
 
 @media screen and (min-width: 18em) and (max-width: 21.25em) {
@@ -421,8 +532,17 @@ ul.list-group li {
   color: lightcyan;
   border: 1px solid #5a5a5a;
 }
+@media screen and (min-width: 16em) and (max-width: 24.25em) {
+  ul.list-group li {
+    font-size: 60%;
+    text-align: left;
+  }
+  ul.list-group li button {
+    margin: -0.7em 1em 0 0;
+  }
+}
 ul.list-group li button {
-  margin-right: 1.5em;
+  margin: -0.4em 1.5em 0 0;
 }
 ul.list-group li:nth-child(1) {
   background: url("../images/lpLogo.jpg") top right/3em no-repeat, url("../images/stripedJukebox.jpg") 0%/cover no-repeat border-box;
@@ -453,6 +573,12 @@ ol li {
   border: 1px solid #000;
   height: 6.5em;
 }
+@media screen and (min-width: 16em) and (max-width: 24em) {
+  ol li {
+    font-size: 90%;
+    height: auto;
+  }
+}
 ol li:before {
   display: inline-block;
   position: absolute;
@@ -461,12 +587,19 @@ ol li:before {
   width: auto;
   left: -0.1em;
   margin: -0.04em 2em 0 -0.9em;
-  background-image: linear-gradient(135deg, #000 25%, #FCFFF5 75%);
-  height: inherit;
+  background-image: linear-gradient(135deg, #000 25%, #2B86C2 75%);
   width: 1em;
+  height: inherit;
   font: 2em "Cinzel Decorative", serif;
   border: 1px solid #000;
   padding-top: 0.75em;
+}
+@media screen and (min-width: 16em) and (max-width: 24em) {
+  ol li:before {
+    height: auto;
+    top: 0.01em;
+    padding-top: 0;
+  }
 }
 
 dl#linkContainer dt {

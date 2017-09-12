@@ -16,8 +16,9 @@ section.specialSection{
 		& ul{
 			text-align: left;
 		}
-		& p{
+		& a p{
 			font-family: $openSans;
+			color: $aqua;
 		}
 	}
 	& h3{

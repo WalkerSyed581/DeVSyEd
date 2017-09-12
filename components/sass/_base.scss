@@ -38,7 +38,11 @@ p{
 }
 figure{
 	& figcaption{
-	margin: 0 auto;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.2em;
+		color: lighten($gold,50%);
+		text-shadow: 0.1em 0.1em 0.1em $gold;
 	}
 	& img{
 	margin: 0 auto;

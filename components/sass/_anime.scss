@@ -1,4 +1,8 @@
+#favAnime{
+	float: right;
+}
 dl#linkContainer{
+	width: 100%;
 	& dt{
 		background-image: linear-gradient(135deg,$darkGreen 4%,transparentize($greyishGreen, 0.3) 20%,$whitishGreen 50%,transparentize($greyishGreen, 0.3) 75%,$darkGreen 96%);
 		& a{

@@ -33,4 +33,10 @@ ul.list-group{
 		background: url("../images/bmthLogo.jpg") top right/2.75em no-repeat,url('../images/stripedJukebox.jpg') 0%/cover no-repeat border-box;
 	}
 }
+@media screen and (min-width : 62em){
+#specialCase{
+	margin-top: -10%;
+}
+}
+
 

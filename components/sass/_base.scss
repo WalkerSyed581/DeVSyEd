@@ -352,10 +352,9 @@ footer{
 .img-thumbnail{
 	background: none;
 }
-section#asideSection{
+aside{
 	padding: 1.5em;
-	background: url('../images/stripes.jpg') 50%/cover no-repeat border-box;
+	background-image: linear-gradient(135deg ,transparent 0,$darkGreen 30%,$darkBlack 50%,$darkGreen 80%,transparent 90%);
 	border-radius: 0.5em;
-	color: $skyBlue;
-	font-weight: 700;
+	color: $aqua;
 }

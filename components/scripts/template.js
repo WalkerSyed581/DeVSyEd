@@ -1,4 +1,6 @@
 $(function(){
+	$('body').append("<script type='text/javascript src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3bd186c545881'></script>"); 
+	$('body').append("<script type='text/javascript' src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3bd186c545881'></script>");
 	function checkSizeAndApply(){
 		if((window.innerWidth >= 768) && (document.title !== "Dev Syed")){
 			$("main section div").addClass('in');

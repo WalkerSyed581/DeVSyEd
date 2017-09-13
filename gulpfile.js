@@ -21,7 +21,7 @@ env = process.env.NODE_ENV || 'development';
 if (env==='development') {
   outputDir = 'builds/development/';
   sassStyle = 'expanded';
-} else {
+} else if(env==='production') {
   outputDir = 'builds/production/';
   sassStyle = 'compressed';
 }
@@ -57,15 +57,8 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
   gulp.watch('builds/development/*.html', ['html']);
-  gulp.watch('builds/development/images/**/*.*', ['images']);
 });
 
-gulp.task('connect', function() {
-  connect.server({
-    root: outputDir,
-    livereload: true
-  });
-});
 
 gulp.task('html', function() {
   gulp.src('builds/development/*.html')
@@ -74,16 +67,5 @@ gulp.task('html', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('images', function() {
-  gulp.src('builds/development/images/**/*.*')
-    .pipe(gulpif(env === 'production', imagemin({
-      progressive: true,
-      svgoPlugins: [{ removeViewBox: false }],
-      use: [pngcrush()]
-    })))
-    .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
-    .pipe(connect.reload())
-});
 
-
-gulp.task('default', ['html', 'js', 'compass', 'images', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'compass', 'watch']);
